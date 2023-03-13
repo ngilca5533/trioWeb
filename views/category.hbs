@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CAP805 winter 2023 Demo</title>
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        {{> header user}}
+
+        <!-- Content -->
+        <div class="contentContainer">
+            <h1>Welcome to Category Sample!</h1>
+            <p>Here we talk about place category description here</p>
+        </div>
+
+
+            <div class="col-md-12">
+        <br>
+        <h2>Posts</h2>
+
+        
+        <div class="table-responsive">
+
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th>Post&nbsp;Title</th>
+                        <th>Post&nbsp;Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td><p>Put post title here(clickable)</p></td>
+                        <td><p>Put post description here</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+        <!-- footer -->
+        {{> footer user}}
+    </div>
+</body>
+
+</html>

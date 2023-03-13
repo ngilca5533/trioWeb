@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CAP805 winter 2023 Demo</title>
+    <link rel="stylesheet" href="/css/theme.css" />
+</head>
+<body>
+    <div class="container"> 
+        <!-- HEADER --> 
+        {{> header user }}
+
+        <!-- Content --> 
+        <div class="contentContainer">
+            <h1>CAP805 w2023 Dashboard</h1>
+            <h2>Welcome <em>{{ user.username }}</em></h2>
+            <p>Email: {{ user.email }}</p>
+            <p>You should onlly see this when you are logged in!!</p>
+        </div>
+
+        <!-- footer -->
+        {{> footer user}}
+    </div>
+</body>
+</html>

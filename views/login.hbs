@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login - CAP805 winter 2023 Demo</title>
+    <link rel="stylesheet" href="/css/theme.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        {{> header user}}
+
+        <!-- Content -->
+        <div class="contentContainer">
+            <h1>CAP805 w2023 Login</h1>
+            <form method="post" action="/login">
+                <label class="fixedlabel">Username:</label>
+                <input name="username" type="text"><br />
+                <label class="fixedlabel">Password:</label>
+                <input name="password" type="password"><br />
+                <label class="fixedlabel"></label>
+                <button type="submit">Login</button><br />
+            </form>
+
+            <br />
+
+            <a href="/register">No account? Sing up here!</a>
+
+           
+
+
+        </div>
+
+        <!-- footer -->
+        {{> footer user}}
+    </div>
+</body>
+
+</html>
